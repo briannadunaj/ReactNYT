@@ -10,24 +10,24 @@ var Saved = React.createClass({
 
     return (
 
-    <div className="container">
-          
-          <div className="col-lg-12">
-            <div className="panel panel-primary">
-              <div className="panel-heading">
-                <h3 className="panel-title">Child #1</h3>
-              </div>
-              <div className="panel-body">
-                <p>I am child 1</p>
-                {/*<p>
-                  <Link to="/child1/grandchild1"><button className="btn btn-warning btn-sm">Show Grandchild1</button></Link>
-                  <Link to="/child1/grandchild2"><button className="btn btn-warning btn-sm">Show Grandchild2</button></Link>
-                </p>*/}
-                  {this.props.children}
-              </div>
-            </div>
-          </div>
-        </div>
+      <section>
+         <div className="panel panel-default">
+           <div className="panel-heading">
+             <h2><strong>Saved Articles</strong></h2>
+           </div>
+           <div className="panel-body">         
+             <div>
+              saved article 1
+             </div>
+             <div>
+             saved article 2
+             </div>
+           </div>
+         </div>
+         <div>
+         {this.props.children}
+         </div>
+       </section>
     );
   }
 });

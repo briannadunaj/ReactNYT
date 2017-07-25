@@ -7,16 +7,58 @@ var Search = React.createClass({
 
     return (
 
-       
+       <section>
           <div className="panel panel-default">
             <div className="panel-heading">
-              <h2 className="panel-title">Results</h2>
+              <h2><strong>Results</strong></h2>
             </div>
             <div className="panel-body">
-              Panel content
+              <div className="col-lg-6">
+                  <div className="input-group">
+                    <input type="text" className="form-control" placeholder="Article 1"/>
+                    <span className="input-group-btn">
+                      <button className="btn btn-default" type="button">Save</button>
+                    </span>
+                  </div>
+              </div>
+              <div className="col-lg-6">
+                  <div className="input-group">
+                    <input type="text" className="form-control" placeholder="Article 2"/>
+                    <span className="input-group-btn">
+                      <button className="btn btn-default" type="button">Save</button>
+                    </span>
+                  </div>
+              </div>
+              <div className="col-lg-6">
+                  <div className="input-group">
+                    <input type="text" className="form-control" placeholder="Article 3"/>
+                    <span className="input-group-btn">
+                      <button className="btn btn-default" type="button">Save</button>
+                    </span>
+                  </div>
+              </div>
+              <div className="col-lg-6">
+                  <div className="input-group">
+                    <input type="text" className="form-control" placeholder="Article 4"/>
+                    <span className="input-group-btn">
+                      <button className="btn btn-default" type="button">Save</button>
+                    </span>
+                  </div>
+              </div>
+              <div className="col-lg-6">
+                  <div className="input-group">
+                    <input type="text" className="form-control" placeholder="Article 5"/>
+                    <span className="input-group-btn">
+                      <button className="btn btn-default" type="button">Save</button>
+                    </span>
+                  </div>
+              </div>
             </div>
           </div>
-        
+          <div>
+          {this.props.children}
+          </div>
+        </section>
       
     );
   }

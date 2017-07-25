@@ -33,12 +33,15 @@ var Main = React.createClass({
           </div>
           <p>
             <Link to="/search"><button className="btn btn-default">Search</button></Link>
+            <Link to="/saved"><button className="btn btn-default">Saved Articles</button></Link>
         
           </p>
-          <div>
-            {this.props.children}
-          </div>
+           
         </div>
+        <div>
+           {this.props.children}
+        </div>
+
       </div>
 
 

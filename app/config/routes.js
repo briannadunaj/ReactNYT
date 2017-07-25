@@ -33,15 +33,16 @@ module.exports = (
 
       {/* If user selects Info or Chat show the appropriate component*/} 
       <Route path="search" component={Search} >
-        <Route path ="saved" component={Saved} />
-        <IndexRoute component={Saved} />
+        
+        
       </Route>
+      
+      <Route path ="saved" component={Saved} />
+      
+            
+      </Route> 
 
-   {  /* <Route path="saved" component={Saved} />
-           <IndexRoute component={Saved} />
-         </Route> */}
-
-    </Route>
+   
   </Router> 
 
 );
